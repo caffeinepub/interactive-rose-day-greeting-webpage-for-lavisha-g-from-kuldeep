@@ -1,0 +1,21 @@
+{
+  "backend/main.mo": "Empty Motoko actor defining an unused backend canister.",
+  "feature_evidence.json": "Feature evidence report mapping product requirements to related frontend files and components.",
+  "frontend-file-summaries.txt": "Plain-text summaries describing the purpose and behavior of various frontend UI and config files.",
+  "frontend/index.css": "Tailwind base and theme variables defining the medical/AI color system, dark mode tokens, and global element styling.",
+  "frontend/index.html": "HTML entry point setting metadata, favicon, and mounting point for the React application.",
+  "frontend/src/App.tsx": "Main React app rendering hero, overview, pipeline, and FAQ sections with a medical deep-learning theme.",
+  "frontend/src/components/FinalReveal.tsx": "Empty placeholder component file.",
+  "frontend/src/components/LoveNotes.tsx": "Empty placeholder component file.",
+  "frontend/src/components/RoseBloom.tsx": "Empty placeholder component file.",
+  "frontend/src/components/site/FAQAccordion.tsx": "FAQ accordion built with shadcn/ui providing expandable research and clinical explanations.",
+  "frontend/src/components/site/Footer.tsx": "Footer showing logo, quick links, owner info, and attribution with a medical-themed layout.",
+  "frontend/src/components/site/PipelineTabs.tsx": "Renders a tabbed UI with sections for preprocessing, model, and evaluation, each containing descriptive content and icons.",
+  "frontend/src/components/site/SiteHeader.tsx": "Implements a responsive site header with smooth-scrolling navigation, scroll-based styling, and a mobile menu toggle.",
+  "frontend/src/hooks/useActor.ts": "Creates and manages a backend actor tied to the user's identity, invalidating related queries when the actor changes.",
+  "frontend/src/hooks/useInternetIdentity.ts": "Provides Internet Identity authentication context with login, logout, and identity persistence using Dfinity AuthClient.",
+  "frontend/src/index.css": "Defines global Tailwind styles, theme variables, typography, backgrounds, and utility classes for animations and accents.",
+  "frontend/src/main.tsx": "Bootstraps the React app, wrapping it with React Query and Internet Identity providers.",
+  "frontend/tailwind.config.js": "Configures Tailwind theme extensions, color mappings to CSS vars, animations, plugins, and container settings.",
+  "project_state.json": "Defines project metadata, required images, and a list of existing features for building an interactive website about heart disease classification. Contains project versioning, notes, and image asset requirements."
+}

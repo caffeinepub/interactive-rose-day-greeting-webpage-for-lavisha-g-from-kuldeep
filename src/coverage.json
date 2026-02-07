@@ -1,0 +1,160 @@
+{
+  "kind": "coverage_report",
+  "version": "1.0",
+  "generatedAt": "2026-02-07T05:10:12.503Z",
+  "sources": {
+    "buildRequest": true,
+    "implementationPlan": true
+  },
+  "requirements": {
+    "total": 7,
+    "implemented": 7,
+    "items": [
+      {
+        "id": "REQ-10",
+        "summary": "Update the document metadata to match the new site (page title and any visible branding), removing the old Rose Day project name from the HTML title.",
+        "status": "implemented",
+        "plannedFiles": [
+          "frontend/index.html",
+          "frontend/src/components/site/SiteHeader.tsx",
+          "frontend/src/App.tsx"
+        ],
+        "matchedFiles": [
+          "frontend/index.html",
+          "frontend/src/components/site/SiteHeader.tsx",
+          "frontend/src/App.tsx"
+        ]
+      },
+      {
+        "id": "REQ-11",
+        "summary": "Add and use new generated static images for the new topic (hero/illustrations/backgrounds) from frontend/public/assets/generated, and ensure the UI references these new assets (do not fetch images from the backend).",
+        "status": "implemented",
+        "plannedFiles": [
+          "frontend/public/assets/generated/echo-ai-hero.dim_1600x900.png",
+          "frontend/public/assets/generated/medical-bg-texture.dim_1920x1080.png",
+          "frontend/public/assets/generated/pipeline-icons-set.dim_384x128.png",
+          "frontend/src/App.tsx",
+          "frontend/src/index.css"
+        ],
+        "matchedFiles": [
+          "frontend/public/assets/generated/echo-ai-hero.dim_1600x900.png",
+          "frontend/public/assets/generated/medical-bg-texture.dim_1920x1080.png",
+          "frontend/public/assets/generated/pipeline-icons-set.dim_384x128.png",
+          "frontend/src/App.tsx",
+          "frontend/src/index.css"
+        ]
+      },
+      {
+        "id": "REQ-12",
+        "summary": "Maintain responsiveness and accessibility for the new site: readable contrast, sensible spacing on small screens, and clear focus states for all interactive elements.",
+        "status": "implemented",
+        "plannedFiles": [
+          "frontend/src/index.css",
+          "frontend/src/App.tsx",
+          "frontend/src/components/site/SiteHeader.tsx"
+        ],
+        "matchedFiles": [
+          "frontend/src/index.css",
+          "frontend/src/App.tsx",
+          "frontend/src/components/site/SiteHeader.tsx"
+        ]
+      },
+      {
+        "id": "REQ-6",
+        "summary": "Replace the current Rose Day single-page experience with a user-friendly, interactive informational website about “Heart Disease Classification From Echocardiogram Images Using Deep Learning” (crediting MUHAMMAD RAOOF and MUHAMMAD MAHTAB on the page).",
+        "status": "implemented",
+        "plannedFiles": [
+          "frontend/src/App.tsx",
+          "frontend/src/components/RoseBloom.tsx",
+          "frontend/src/components/LoveNotes.tsx",
+          "frontend/src/components/FinalReveal.tsx",
+          "frontend/src/components/site/Sections.tsx",
+          "frontend/src/components/site/Footer.tsx"
+        ],
+        "matchedFiles": [
+          "frontend/src/App.tsx",
+          "frontend/src/components/RoseBloom.tsx",
+          "frontend/src/components/LoveNotes.tsx",
+          "frontend/src/components/FinalReveal.tsx",
+          "frontend/src/components/site/Footer.tsx"
+        ]
+      },
+      {
+        "id": "REQ-7",
+        "summary": "Implement a coherent, professional medical/AI visual theme (colors, typography, layout) appropriate for a healthcare deep-learning topic, and apply it consistently across the site (including backgrounds, sections, buttons, and interactive states).",
+        "status": "implemented",
+        "plannedFiles": [
+          "frontend/src/index.css",
+          "frontend/tailwind.config.js",
+          "frontend/src/App.tsx"
+        ],
+        "matchedFiles": [
+          "frontend/src/index.css",
+          "frontend/tailwind.config.js",
+          "frontend/src/App.tsx"
+        ]
+      },
+      {
+        "id": "REQ-8",
+        "summary": "Add user-friendly interactivity suitable for an informational research/topic site, including: (1) a sticky top navigation with smooth-scroll to sections, and (2) at least two interactive content patterns (e.g., accordion FAQs, tabs for “Pipeline / Model / Results”, expandable cards, or a simple step-by-step pipeline reveal).",
+        "status": "implemented",
+        "plannedFiles": [
+          "frontend/src/components/site/SiteHeader.tsx",
+          "frontend/src/components/site/PipelineTabs.tsx",
+          "frontend/src/components/site/FAQAccordion.tsx",
+          "frontend/src/App.tsx"
+        ],
+        "matchedFiles": [
+          "frontend/src/components/site/SiteHeader.tsx",
+          "frontend/src/components/site/PipelineTabs.tsx",
+          "frontend/src/components/site/FAQAccordion.tsx",
+          "frontend/src/App.tsx"
+        ]
+      },
+      {
+        "id": "REQ-9",
+        "summary": "Create and integrate a unique site logo that represents the owners “Sonu” and “Kuldeep”, and display it in the site header and as a favicon/app icon.",
+        "status": "implemented",
+        "plannedFiles": [
+          "frontend/public/assets/generated/sonu-kuldeep-logo.dim_512x512.png",
+          "frontend/public/assets/generated/sonu-kuldeep-favicon.dim_128x128.png",
+          "frontend/src/components/site/SiteHeader.tsx",
+          "frontend/index.html"
+        ],
+        "matchedFiles": [
+          "frontend/public/assets/generated/sonu-kuldeep-logo.dim_512x512.png",
+          "frontend/public/assets/generated/sonu-kuldeep-favicon.dim_128x128.png",
+          "frontend/src/components/site/SiteHeader.tsx",
+          "frontend/index.html"
+        ]
+      }
+    ]
+  },
+  "changedFiles": [
+    "build-request.json",
+    "build-template/README.md",
+    "feature_evidence.json",
+    "frontend-file-summaries.txt",
+    "frontend-implementation-plan.json",
+    "frontend/index.html",
+    "frontend/public/assets/generated/echo-ai-hero.dim_1600x900.png",
+    "frontend/public/assets/generated/medical-bg-texture.dim_1920x1080.png",
+    "frontend/public/assets/generated/pipeline-icons-set.dim_384x128.png",
+    "frontend/public/assets/generated/sonu-kuldeep-favicon.dim_128x128.png",
+    "frontend/public/assets/generated/sonu-kuldeep-logo.dim_512x512.png",
+    "frontend/src/App.tsx",
+    "frontend/src/components/FinalReveal.tsx",
+    "frontend/src/components/LoveNotes.tsx",
+    "frontend/src/components/RoseBloom.tsx",
+    "frontend/src/components/site/FAQAccordion.tsx",
+    "frontend/src/components/site/Footer.tsx",
+    "frontend/src/components/site/PipelineTabs.tsx",
+    "frontend/src/components/site/SiteHeader.tsx",
+    "frontend/src/index.css",
+    "frontend/tailwind.config.js",
+    "project_state.json",
+    "scratch/component-selection.json",
+    "spec.md",
+    "spec_vs_diff_report.json"
+  ]
+}

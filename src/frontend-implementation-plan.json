@@ -1,0 +1,224 @@
+{
+  "kind": "implementation_plan",
+  "version": "1.0",
+  "title": "Interactive medical/AI informational site on echocardiogram-based heart disease classification with Sonu & Kuldeep branding",
+  "requirements": [
+    {
+      "id": "REQ-6",
+      "summary": "Replace the Rose Day single-page flow with a navigable, interactive informational website about echocardiogram-based heart disease classification and include required author credits.",
+      "acceptanceCriteria": [
+        "The homepage no longer contains Rose Day-specific text (e.g., “Happy Rose Day”, “Lavisha g 💫”, “Kuldeep” signature) or rose-day interaction flow.",
+        "The page content clearly centers on the topic “Heart Disease Classification From Echocardiogram Images Using Deep Learning”.",
+        "The page includes a visible credit line for “MUHAMMAD RAOOF” and “MUHAMMAD MAHTAB” (English UI text).",
+        "The website is navigable and understandable without requiring any login/authentication."
+      ],
+      "file_operations": [
+        {
+          "path": "frontend/src/App.tsx",
+          "operation": "modify",
+          "description": "Replace the Rose Day bloom/notes/reveal flow with a single-page informational layout containing clearly labeled sections (e.g., Overview, Problem, Dataset, Method/Pipeline, Model, Results, Limitations, FAQ, Credits) and visible credits for “MUHAMMAD RAOOF” and “MUHAMMAD MAHTAB”. Include a header + footer consistent with the new topic and remove all Rose Day-specific copy and UI."
+        },
+        {
+          "path": "frontend/src/components/RoseBloom.tsx",
+          "operation": "delete",
+          "description": "Remove the Rose Day rose-bloom interaction component so it is no longer part of the app experience."
+        },
+        {
+          "path": "frontend/src/components/LoveNotes.tsx",
+          "operation": "delete",
+          "description": "Remove the Rose Day love-notes interaction component so it is no longer part of the app experience."
+        },
+        {
+          "path": "frontend/src/components/FinalReveal.tsx",
+          "operation": "delete",
+          "description": "Remove the Rose Day final-reveal dialog component so it is no longer part of the app experience."
+        },
+        {
+          "path": "frontend/src/components/site/Sections.tsx",
+          "operation": "create",
+          "description": "Create section components/content for the informational site (English copy) including a dedicated Credits section that displays “MUHAMMAD RAOOF” and “MUHAMMAD MAHTAB” prominently."
+        },
+        {
+          "path": "frontend/src/components/site/Footer.tsx",
+          "operation": "create",
+          "description": "Create a professional site footer (English) that reinforces the topic context and includes the required credit line if not already included in the main content."
+        }
+      ]
+    },
+    {
+      "id": "REQ-7",
+      "summary": "Implement a coherent professional medical/AI theme (colors, typography, layout) and remove romantic/rose styling.",
+      "acceptanceCriteria": [
+        "The design is visually consistent across all sections (matching spacing, typography scale, and component styling).",
+        "The theme avoids the existing romantic/rose styling and backgrounds (no petal/rose visuals).",
+        "All user-facing text is in English."
+      ],
+      "file_operations": [
+        {
+          "path": "frontend/src/index.css",
+          "operation": "modify",
+          "description": "Replace the current rose-themed palette, typography, and background image usage with a medical/AI theme (clean neutrals, clinical blues/teals, consistent typography scale). Remove any references to rose/petals backgrounds and romantic gradients; ensure global focus styles and section spacing tokens support a professional layout."
+        },
+        {
+          "path": "frontend/tailwind.config.js",
+          "operation": "modify",
+          "description": "Update Tailwind theme extensions to align with the new medical/AI design tokens (colors, shadows, radii, animations) and remove/rename rose-specific tokens/animations where they drive romantic styling."
+        },
+        {
+          "path": "frontend/src/App.tsx",
+          "operation": "modify",
+          "description": "Apply the new theme consistently across the page layout (section backgrounds, buttons/links, cards, interactive states) and remove any rose-specific classes (e.g., text-gradient-rose, gradient-rose, text-love) from the new UI."
+        }
+      ]
+    },
+    {
+      "id": "REQ-8",
+      "summary": "Add sticky top navigation with smooth-scroll and at least two accessible interactive content patterns.",
+      "acceptanceCriteria": [
+        "A sticky header/nav is present and links scroll to corresponding sections on the page.",
+        "At least two distinct interactive UI patterns are implemented and usable on both mobile and desktop.",
+        "Interactive elements are keyboard operable (Tab focusable; Enter/Space activates where applicable)."
+      ],
+      "file_operations": [
+        {
+          "path": "frontend/src/components/site/SiteHeader.tsx",
+          "operation": "create",
+          "description": "Create a sticky header with top navigation links that smooth-scroll to in-page sections and includes accessible keyboard support (visible focus, Enter/Space activation where applicable). Include the Sonu & Kuldeep logo placement in the header. Use the shadcn-ui component library where appropriate (e.g., Button, Navigation/Menu primitives) to standardize interactive styling. Verify the component's usage instructions before implementing."
+        },
+        {
+          "path": "frontend/src/components/site/PipelineTabs.tsx",
+          "operation": "create",
+          "description": "Implement an interactive Tabs pattern for content such as “Pipeline / Model / Results” (or equivalent), ensuring keyboard navigation and ARIA semantics. Prefer shadcn-ui Tabs primitives for accessibility and consistent styling. Verify the component's usage instructions before implementing."
+        },
+        {
+          "path": "frontend/src/components/site/FAQAccordion.tsx",
+          "operation": "create",
+          "description": "Implement an interactive Accordion FAQ section (expand/collapse questions) with full keyboard operability and visible focus states. Prefer shadcn-ui Accordion primitives for accessibility and consistent styling. Verify the component's usage instructions before implementing."
+        },
+        {
+          "path": "frontend/src/App.tsx",
+          "operation": "modify",
+          "description": "Wire the sticky header and the two interactive patterns (Tabs + Accordion) into the page and ensure section anchors/ids align with the nav smooth-scroll behavior."
+        }
+      ]
+    },
+    {
+      "id": "REQ-9",
+      "summary": "Integrate a unique Sonu & Kuldeep logo in the header and use it as the favicon/app icon.",
+      "acceptanceCriteria": [
+        "A custom logo image is present in the header.",
+        "The browser tab/favicon uses the same brand mark.",
+        "The logo includes the names “Sonu” and “Kuldeep” as part of the visual mark (not just plain body text elsewhere)."
+      ],
+      "file_operations": [
+        {
+          "path": "frontend/public/assets/generated/sonu-kuldeep-logo.dim_512x512.png",
+          "operation": "create",
+          "description": "Add the generated logo asset at frontend/public/assets/generated/sonu-kuldeep-logo.dim_512x512.png and ensure it is the primary brand mark used in the UI."
+        },
+        {
+          "path": "frontend/public/assets/generated/sonu-kuldeep-favicon.dim_128x128.png",
+          "operation": "create",
+          "description": "Add the generated favicon/app icon at frontend/public/assets/generated/sonu-kuldeep-favicon.dim_128x128.png for browser tab usage."
+        },
+        {
+          "path": "frontend/src/components/site/SiteHeader.tsx",
+          "operation": "modify",
+          "description": "Render the logo image (frontend/public/assets/generated/sonu-kuldeep-logo.dim_512x512.png) in the header with appropriate alt text and sizing; ensure the logo mark includes “Sonu” and “Kuldeep” visually (as provided by the asset)."
+        },
+        {
+          "path": "frontend/index.html",
+          "operation": "modify",
+          "description": "Add/adjust favicon metadata to reference frontend/public/assets/generated/sonu-kuldeep-favicon.dim_128x128.png and ensure it is used by the browser tab."
+        }
+      ]
+    },
+    {
+      "id": "REQ-10",
+      "summary": "Update document metadata and visible branding to remove Rose Day naming and match the new topic/brand.",
+      "acceptanceCriteria": [
+        "The HTML <title> no longer references the Rose Day greeting page and reflects the new topic/brand.",
+        "Visible header branding matches the new logo/owners and topic context."
+      ],
+      "file_operations": [
+        {
+          "path": "frontend/index.html",
+          "operation": "modify",
+          "description": "Update the HTML title to reflect the new site topic/brand (medical/AI echocardiogram classification) and remove all Rose Day references."
+        },
+        {
+          "path": "frontend/src/components/site/SiteHeader.tsx",
+          "operation": "modify",
+          "description": "Ensure visible header branding (logo + site name/tagline) matches the new topic context and owners (Sonu & Kuldeep), with English UI text."
+        },
+        {
+          "path": "frontend/src/App.tsx",
+          "operation": "modify",
+          "description": "Ensure the hero/primary heading and above-the-fold branding align with the updated title and logo/owners, with no Rose Day references."
+        }
+      ]
+    },
+    {
+      "id": "REQ-11",
+      "summary": "Add and reference newly generated static images from frontend/public/assets/generated and stop using old rose/petals assets.",
+      "acceptanceCriteria": [
+        "All new images are served from frontend/public/assets/generated and referenced via static paths.",
+        "The old rose/petals generated images are not used as the page background or hero imagery.",
+        "No backend endpoints are introduced for image delivery."
+      ],
+      "file_operations": [
+        {
+          "path": "frontend/public/assets/generated/echo-ai-hero.dim_1600x900.png",
+          "operation": "create",
+          "description": "Add the generated hero illustration asset at frontend/public/assets/generated/echo-ai-hero.dim_1600x900.png (no text embedded)."
+        },
+        {
+          "path": "frontend/public/assets/generated/medical-bg-texture.dim_1920x1080.png",
+          "operation": "create",
+          "description": "Add the generated subtle background texture at frontend/public/assets/generated/medical-bg-texture.dim_1920x1080.png."
+        },
+        {
+          "path": "frontend/public/assets/generated/pipeline-icons-set.dim_384x128.png",
+          "operation": "create",
+          "description": "Add the generated pipeline icon set at frontend/public/assets/generated/pipeline-icons-set.dim_384x128.png (data/model/results icons)."
+        },
+        {
+          "path": "frontend/src/App.tsx",
+          "operation": "modify",
+          "description": "Reference frontend/public/assets/generated/echo-ai-hero.dim_1600x900.png in the hero section and frontend/public/assets/generated/pipeline-icons-set.dim_384x128.png in the pipeline/model/results area; ensure only static asset paths are used (no backend fetching)."
+        },
+        {
+          "path": "frontend/src/index.css",
+          "operation": "modify",
+          "description": "Replace the current body background image reference to old petals with the new static background texture frontend/public/assets/generated/medical-bg-texture.dim_1920x1080.png and ensure no rose/petals/rose-hero assets are used anywhere in the new UI."
+        }
+      ]
+    },
+    {
+      "id": "REQ-12",
+      "summary": "Ensure the site is responsive and accessible with readable contrast, sensible spacing, and clear focus states.",
+      "acceptanceCriteria": [
+        "All sections render without overflow issues on small screens.",
+        "Text contrast is readable for primary content and navigation.",
+        "All interactive controls have visible focus styling and are usable by keyboard."
+      ],
+      "file_operations": [
+        {
+          "path": "frontend/src/index.css",
+          "operation": "modify",
+          "description": "Add/adjust global focus-visible styles and contrast-safe defaults for links/buttons/interactive controls; ensure typography and spacing scale responsively and that focus rings are clearly visible on the new medical/AI theme."
+        },
+        {
+          "path": "frontend/src/App.tsx",
+          "operation": "modify",
+          "description": "Ensure responsive layout for all sections (mobile-first spacing, no horizontal overflow), provide skip-to-content link if needed, and confirm interactive elements (nav links, tabs, accordion triggers) are reachable and operable via keyboard."
+        },
+        {
+          "path": "frontend/src/components/site/SiteHeader.tsx",
+          "operation": "modify",
+          "description": "Ensure the sticky header remains usable on small screens (responsive nav behavior) and that keyboard focus order and visible focus states are clear across navigation controls."
+        }
+      ]
+    }
+  ]
+}

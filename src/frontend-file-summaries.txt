@@ -1,0 +1,13 @@
+{
+  "frontend/src/index.css": "Global styles with medical/AI theme using OKLCH color system (clinical blues, teals, clean neutrals), Inter and JetBrains Mono fonts, subtle medical background texture, and comprehensive accessibility focus states.",
+  "frontend/src/App.tsx": "Main application component featuring a comprehensive single-page informational website about heart disease classification from echocardiogram images using deep learning, with sections for overview, dataset, pipeline, results, limitations, FAQ, and credits for Muhammad Raoof and Muhammad Mahtab.",
+  "frontend/src/components/RoseBloom.tsx": "Interactive rose component with click/keyboard activation that triggers bloom animation with sparkle effects, glow, and completion callback to unlock next section.",
+  "frontend/src/components/LoveNotes.tsx": "Progressive card-based love notes component with tap-to-reveal interaction, 5 personalized messages, progress indicator, and smooth transitions between notes.",
+  "frontend/src/components/FinalReveal.tsx": "Modal dialog component displaying the final romantic Rose Day message with decorative elements, rose icon, and signature from Kuldeep.",
+  "frontend/tailwind.config.js": "Tailwind configuration with medical/AI design tokens (clinical blue primary, teal accents, medical shadows), Inter/JetBrains Mono font stack, and custom animations for the professional healthcare aesthetic.",
+  "frontend/src/components/site/SiteHeader.tsx": "Sticky navigation header with smooth-scroll links to page sections, responsive mobile menu, and Sonu & Kuldeep logo integration with full keyboard accessibility.",
+  "frontend/src/components/site/Footer.tsx": "Professional site footer with logo, quick links, owner information (Sonu & Kuldeep), and caffeine.ai attribution.",
+  "frontend/src/components/site/PipelineTabs.tsx": "Interactive tabbed interface displaying the deep learning pipeline stages (preprocessing, model architecture, and evaluation) with detailed descriptions and visual organization using shadcn/ui Tabs component.",
+  "frontend/src/components/site/FAQAccordion.tsx": "Accessible accordion component for frequently asked questions about echocardiogram analysis, deep learning diagnostics, and clinical deployment using shadcn/ui Accordion primitives.",
+  "frontend/index.html": "HTML entry point with updated title, meta description, and favicon referencing the heart disease classification research topic and Sonu & Kuldeep branding."
+}

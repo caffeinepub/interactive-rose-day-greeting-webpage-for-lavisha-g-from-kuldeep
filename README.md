@@ -1,2 +1,3 @@
-# interactive-rose-day-greeting-webpage-for-lavisha-g-from-kuldeep
-Exported from Caffeine project: Heart Disease Classification from Echocardiogram Images Using Deep Learning website
+## 
+
+To run app build and run docker image: `docker build -t app . docker run -it --network host app`

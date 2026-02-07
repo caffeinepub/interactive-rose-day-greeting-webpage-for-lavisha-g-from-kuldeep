@@ -1,0 +1,165 @@
+{
+  "kind": "build_request",
+  "title": "Replace Rose Day greeting with interactive website about echocardiogram-based heart disease classification + custom Sonu & Kuldeep logo",
+  "priority": "normal",
+  "requirements": [
+    {
+      "id": "REQ-6",
+      "text": "Replace the current Rose Day single-page experience with a user-friendly, interactive informational website about “Heart Disease Classification From Echocardiogram Images Using Deep Learning” (crediting MUHAMMAD RAOOF and MUHAMMAD MAHTAB on the page).",
+      "target": "frontend",
+      "source": {
+        "messageIds": [
+          "msg-user"
+        ],
+        "quotes": [
+          "Heart Disease Classification From\nEchocardiogram Images Using\nDeep Learning\nMUHAMMAD RAOOF1\n, MUHAMMAD MAHTAB \n\nCreate a website on this topic it should be user friendly and well interactive"
+        ]
+      },
+      "acceptanceCriteria": [
+        "The homepage no longer contains Rose Day-specific text (e.g., “Happy Rose Day”, “Lavisha g 💫”, “Kuldeep” signature) or rose-day interaction flow.",
+        "The page content clearly centers on the topic “Heart Disease Classification From Echocardiogram Images Using Deep Learning”.",
+        "The page includes a visible credit line for “MUHAMMAD RAOOF” and “MUHAMMAD MAHTAB” (English UI text).",
+        "The website is navigable and understandable without requiring any login/authentication."
+      ]
+    },
+    {
+      "id": "REQ-7",
+      "text": "Implement a coherent, professional medical/AI visual theme (colors, typography, layout) appropriate for a healthcare deep-learning topic, and apply it consistently across the site (including backgrounds, sections, buttons, and interactive states).",
+      "target": "frontend",
+      "source": {
+        "messageIds": [
+          "msg-user"
+        ],
+        "quotes": [
+          "Create a website on this topic it should be user friendly and well interactive"
+        ]
+      },
+      "acceptanceCriteria": [
+        "The design is visually consistent across all sections (matching spacing, typography scale, and component styling).",
+        "The theme avoids the existing romantic/rose styling and backgrounds (no petal/rose visuals).",
+        "All user-facing text is in English."
+      ]
+    },
+    {
+      "id": "REQ-8",
+      "text": "Add user-friendly interactivity suitable for an informational research/topic site, including: (1) a sticky top navigation with smooth-scroll to sections, and (2) at least two interactive content patterns (e.g., accordion FAQs, tabs for “Pipeline / Model / Results”, expandable cards, or a simple step-by-step pipeline reveal).",
+      "target": "frontend",
+      "source": {
+        "messageIds": [
+          "msg-user"
+        ],
+        "quotes": [
+          "it should be user friendly and well interactive"
+        ]
+      },
+      "acceptanceCriteria": [
+        "A sticky header/nav is present and links scroll to corresponding sections on the page.",
+        "At least two distinct interactive UI patterns are implemented and usable on both mobile and desktop.",
+        "Interactive elements are keyboard operable (Tab focusable; Enter/Space activates where applicable)."
+      ]
+    },
+    {
+      "id": "REQ-9",
+      "text": "Create and integrate a unique site logo that represents the owners “Sonu” and “Kuldeep”, and display it in the site header and as a favicon/app icon.",
+      "target": "frontend",
+      "source": {
+        "messageIds": [
+          "msg-user"
+        ],
+        "quotes": [
+          "this site logo should be unique and belongs to sonu  and Kuldeep we are the owners"
+        ]
+      },
+      "acceptanceCriteria": [
+        "A custom logo image is present in the header.",
+        "The browser tab/favicon uses the same brand mark.",
+        "The logo includes the names “Sonu” and “Kuldeep” as part of the visual mark (not just plain body text elsewhere)."
+      ]
+    },
+    {
+      "id": "REQ-10",
+      "text": "Update the document metadata to match the new site (page title and any visible branding), removing the old Rose Day project name from the HTML title.",
+      "target": "frontend",
+      "source": {
+        "messageIds": [
+          "msg-user"
+        ],
+        "quotes": [
+          "Create a website on this topic"
+        ]
+      },
+      "acceptanceCriteria": [
+        "The HTML <title> no longer references the Rose Day greeting page and reflects the new topic/brand.",
+        "Visible header branding matches the new logo/owners and topic context."
+      ]
+    },
+    {
+      "id": "REQ-11",
+      "text": "Add and use new generated static images for the new topic (hero/illustrations/backgrounds) from frontend/public/assets/generated, and ensure the UI references these new assets (do not fetch images from the backend).",
+      "target": "frontend",
+      "source": {
+        "messageIds": [
+          "msg-user"
+        ],
+        "quotes": [
+          "Create a website on this topic it should be user friendly and well interactive"
+        ]
+      },
+      "acceptanceCriteria": [
+        "All new images are served from frontend/public/assets/generated and referenced via static paths.",
+        "The old rose/petals generated images are not used as the page background or hero imagery.",
+        "No backend endpoints are introduced for image delivery."
+      ]
+    },
+    {
+      "id": "REQ-12",
+      "text": "Maintain responsiveness and accessibility for the new site: readable contrast, sensible spacing on small screens, and clear focus states for all interactive elements.",
+      "target": "frontend",
+      "source": {
+        "messageIds": [
+          "msg-user"
+        ],
+        "quotes": [
+          "user friendly"
+        ]
+      },
+      "acceptanceCriteria": [
+        "All sections render without overflow issues on small screens.",
+        "Text contrast is readable for primary content and navigation.",
+        "All interactive controls have visible focus styling and are usable by keyboard."
+      ]
+    }
+  ],
+  "constraints": [
+    "Frontend immutable paths must not be edited: frontend/src/hooks/useInternetIdentity.ts, frontend/src/hooks/useInternetIdentity.tsx, frontend/src/hooks/useActor.ts, frontend/src/main.tsx, frontend/src/components/ui.",
+    "Backend must remain single-actor Motoko (backend/main.mo)."
+  ],
+  "nonGoals": [
+    "Implementing actual deep learning inference/classification in the browser or backend.",
+    "Supporting echocardiogram image upload and automated diagnosis predictions.",
+    "Adding third-party authentication providers beyond Internet Identity (not required for this informational site).",
+    "Integrating external databases or external cloud APIs."
+  ],
+  "imageRequirements": {
+    "required": [
+      "Unique medical-AI themed logo mark including the text “Sonu” and “Kuldeep”, clean vector/flat style, transparent background (sonu-kuldeep-logo.dim_512x512.png)",
+      "Favicon/app icon derived from the logo mark, simplified for small sizes, transparent background (sonu-kuldeep-favicon.dim_128x128.png)",
+      "Hero illustration featuring echocardiogram/ultrasound waveform + subtle heart/cardiology elements, modern flat or soft-3D style, no text (echo-ai-hero.dim_1600x900.png)",
+      "Subtle seamless background texture with abstract medical/AI motifs (grids, waveforms, nodes), very light, no text (medical-bg-texture.dim_1920x1080.png)",
+      "Three simple icon illustrations representing: data, model, results; consistent style, no text (pipeline-icons-set.dim_384x128.png)"
+    ],
+    "edits": []
+  },
+  "userProfileUpdate": {
+    "goalsToAdd": [],
+    "goalsToRemove": [],
+    "preferencesToAdd": [
+      "Use English for all user-facing website copy."
+    ],
+    "preferencesToRemove": [],
+    "miscToAdd": [],
+    "miscToRemove": [],
+    "fieldsToSet": {},
+    "fieldsToDelete": []
+  }
+}

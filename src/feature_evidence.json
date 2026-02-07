@@ -1,0 +1,146 @@
+{
+  "kind": "feature_evidence_report",
+  "features": [
+    {
+      "featureId": "feature-replace-the-current-rose-day-single-page-experience-with-a-user-friendly-interactive-informational-website-about-heart-disease-classification-from-echocardiogram-images-using-deep-learning-crediting-muhammad-raoof-and-muhammad-mahtab-on-the-page",
+      "featureTitle": "Replace the current Rose Day single-page experience with a user-friendly, interactive informational website about “Heart Disease Classification From Echocardiogram Images Using Deep Learning” (crediting MUHAMMAD RAOOF and MUHAMMAD MAHTAB on the page).",
+      "files": [
+        "frontend/src/App.tsx",
+        "frontend/src/components/FinalReveal.tsx",
+        "frontend/src/components/LoveNotes.tsx",
+        "frontend/src/components/RoseBloom.tsx",
+        "frontend/src/components/site/Footer.tsx"
+      ],
+      "components": [
+        "core-infrastructure@1.0.2",
+        "shadcn-ui@1.0.0",
+        "build-template-react@1.0.0",
+        "initial-app@1.0.0",
+        "github-export-icp-cli@1.0.0"
+      ],
+      "testIds": [
+        "REQ-6"
+      ],
+      "confidence": "high"
+    },
+    {
+      "featureId": "feature-implement-a-coherent-professional-medical-ai-visual-theme-colors-typography-layout-appropriate-for-a-healthcare-deep-learning-topic-and-apply-it-consistently-across-the-site-including-backgrounds-sections-buttons-and-interactive-states",
+      "featureTitle": "Implement a coherent, professional medical/AI visual theme (colors, typography, layout) appropriate for a healthcare deep-learning topic, and apply it consistently across the site (including backgrounds, sections, buttons, and interactive states).",
+      "files": [
+        "frontend/src/App.tsx",
+        "frontend/src/index.css",
+        "frontend/tailwind.config.js"
+      ],
+      "components": [
+        "core-infrastructure@1.0.2",
+        "shadcn-ui@1.0.0",
+        "build-template-react@1.0.0",
+        "initial-app@1.0.0",
+        "github-export-icp-cli@1.0.0"
+      ],
+      "testIds": [
+        "REQ-7"
+      ],
+      "confidence": "high"
+    },
+    {
+      "featureId": "feature-add-user-friendly-interactivity-suitable-for-an-informational-research-topic-site-including-1-a-sticky-top-navigation-with-smooth-scroll-to-sections-and-2-at-least-two-interactive-content-patterns-e-g-accordion-faqs-tabs-for-pipeline-model-results-expandable-cards-or-a-simple-step-by-step-pipeline-reveal",
+      "featureTitle": "Add user-friendly interactivity suitable for an informational research/topic site, including: (1) a sticky top navigation with smooth-scroll to sections, and (2) at least two interactive content patterns (e.g., accordion FAQs, tabs for “Pipeline / Model / Results”, expandable cards, or a simple step-by-step pipeline reveal).",
+      "files": [
+        "frontend/src/App.tsx",
+        "frontend/src/components/site/FAQAccordion.tsx",
+        "frontend/src/components/site/PipelineTabs.tsx",
+        "frontend/src/components/site/SiteHeader.tsx"
+      ],
+      "components": [
+        "core-infrastructure@1.0.2",
+        "shadcn-ui@1.0.0",
+        "build-template-react@1.0.0",
+        "initial-app@1.0.0",
+        "github-export-icp-cli@1.0.0"
+      ],
+      "testIds": [
+        "REQ-8"
+      ],
+      "confidence": "high"
+    },
+    {
+      "featureId": "feature-create-and-integrate-a-unique-site-logo-that-represents-the-owners-sonu-and-kuldeep-and-display-it-in-the-site-header-and-as-a-favicon-app-icon",
+      "featureTitle": "Create and integrate a unique site logo that represents the owners “Sonu” and “Kuldeep”, and display it in the site header and as a favicon/app icon.",
+      "files": [
+        "frontend/index.html",
+        "frontend/src/components/site/SiteHeader.tsx"
+      ],
+      "components": [
+        "core-infrastructure@1.0.2",
+        "shadcn-ui@1.0.0",
+        "build-template-react@1.0.0",
+        "initial-app@1.0.0",
+        "github-export-icp-cli@1.0.0"
+      ],
+      "testIds": [
+        "REQ-9"
+      ],
+      "confidence": "high"
+    },
+    {
+      "featureId": "feature-update-the-document-metadata-to-match-the-new-site-page-title-and-any-visible-branding-removing-the-old-rose-day-project-name-from-the-html-title",
+      "featureTitle": "Update the document metadata to match the new site (page title and any visible branding), removing the old Rose Day project name from the HTML title.",
+      "files": [
+        "frontend/index.html",
+        "frontend/src/App.tsx",
+        "frontend/src/components/site/SiteHeader.tsx"
+      ],
+      "components": [
+        "core-infrastructure@1.0.2",
+        "shadcn-ui@1.0.0",
+        "build-template-react@1.0.0",
+        "initial-app@1.0.0",
+        "github-export-icp-cli@1.0.0"
+      ],
+      "testIds": [
+        "REQ-10"
+      ],
+      "confidence": "high"
+    },
+    {
+      "featureId": "feature-add-and-use-new-generated-static-images-for-the-new-topic-hero-illustrations-backgrounds-from-frontend-public-assets-generated-and-ensure-the-ui-references-these-new-assets-do-not-fetch-images-from-the-backend",
+      "featureTitle": "Add and use new generated static images for the new topic (hero/illustrations/backgrounds) from frontend/public/assets/generated, and ensure the UI references these new assets (do not fetch images from the backend).",
+      "files": [
+        "frontend/src/App.tsx",
+        "frontend/src/index.css"
+      ],
+      "components": [
+        "core-infrastructure@1.0.2",
+        "shadcn-ui@1.0.0",
+        "build-template-react@1.0.0",
+        "initial-app@1.0.0",
+        "github-export-icp-cli@1.0.0"
+      ],
+      "testIds": [
+        "REQ-11"
+      ],
+      "confidence": "high"
+    },
+    {
+      "featureId": "feature-maintain-responsiveness-and-accessibility-for-the-new-site-readable-contrast-sensible-spacing-on-small-screens-and-clear-focus-states-for-all-interactive-elements",
+      "featureTitle": "Maintain responsiveness and accessibility for the new site: readable contrast, sensible spacing on small screens, and clear focus states for all interactive elements.",
+      "files": [
+        "frontend/src/App.tsx",
+        "frontend/src/components/site/SiteHeader.tsx",
+        "frontend/src/index.css"
+      ],
+      "components": [
+        "core-infrastructure@1.0.2",
+        "shadcn-ui@1.0.0",
+        "build-template-react@1.0.0",
+        "initial-app@1.0.0",
+        "github-export-icp-cli@1.0.0"
+      ],
+      "testIds": [
+        "REQ-12"
+      ],
+      "confidence": "high"
+    }
+  ]
+}

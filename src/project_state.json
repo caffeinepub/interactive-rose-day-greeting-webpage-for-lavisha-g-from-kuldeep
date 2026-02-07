@@ -1,0 +1,125 @@
+{
+  "schemaVersion": "1.0.0",
+  "projectStateVersion": 5,
+  "summary": "Build a user-friendly, highly interactive website about “Heart Disease Classification From Echocardiogram Images Using Deep Learning”, including a unique site logo representing the owners Sonu and Kuldeep.",
+  "architectural_notes": [],
+  "known_issues": [],
+  "isFixRequest": false,
+  "imageRequirements": "## Required Images\n- Unique medical-AI themed logo mark including the text “Sonu” and “Kuldeep”, clean vector/flat style, transparent background (sonu-kuldeep-logo.dim_512x512.png)\n- Favicon/app icon derived from the logo mark, simplified for small sizes, transparent background (sonu-kuldeep-favicon.dim_128x128.png)\n- Hero illustration featuring echocardiogram/ultrasound waveform + subtle heart/cardiology elements, modern flat or soft-3D style, no text (echo-ai-hero.dim_1600x900.png)\n- Subtle seamless background texture with abstract medical/AI motifs (grids, waveforms, nodes), very light, no text (medical-bg-texture.dim_1920x1080.png)\n- Three simple icon illustrations representing: data, model, results; consistent style, no text (pipeline-icons-set.dim_384x128.png)",
+  "existing_features": [
+    {
+      "id": "feature-create-a-single-page-interactive-rose-day-greeting-webpage-with-the-recipient-name-shown-exactly-as-lavisha-g-and-the-sender-name-shown-as-kuldeep",
+      "title": "Create a single-page interactive Rose Day greeting webpage with the recipient name shown exactly as “Lavisha g 💫” and the sender name shown as “Kuldeep”.",
+      "reqIds": [
+        "REQ-1"
+      ],
+      "version": 1
+    },
+    {
+      "id": "feature-add-interactive-romantic-ui-elements-appropriate-for-a-rose-day-greeting-e-g-an-animated-rose-flower-interaction-tap-click-to-reveal-love-notes-and-a-final-wish-reveal-moment-that-work-on-both-mobile-and-desktop",
+      "title": "Add interactive, romantic UI elements appropriate for a Rose Day greeting (e.g., an animated rose/flower interaction, tap/click-to-reveal love notes, and a final wish/reveal moment) that work on both mobile and desktop.",
+      "reqIds": [
+        "REQ-2"
+      ],
+      "version": 1
+    },
+    {
+      "id": "feature-implement-a-cohesive-romantic-visual-theme-warm-rose-red-cream-rose-gold-accents-soft-gradients-elegant-typography-and-apply-it-consistently-across-layout-buttons-and-interactive-states",
+      "title": "Implement a cohesive romantic visual theme (warm rose/red, cream, rose-gold accents; soft gradients; elegant typography) and apply it consistently across layout, buttons, and interactive states.",
+      "reqIds": [
+        "REQ-3"
+      ],
+      "version": 1
+    },
+    {
+      "id": "feature-ensure-the-page-is-responsive-and-accessible-readable-text-contrast-keyboard-operability-for-interactive-elements-and-sensible-layout-on-small-screens",
+      "title": "Ensure the page is responsive and accessible: readable text contrast, keyboard operability for interactive elements, and sensible layout on small screens.",
+      "reqIds": [
+        "REQ-4"
+      ],
+      "version": 1
+    },
+    {
+      "id": "feature-add-the-required-generated-static-images-to-the-project-and-render-them-in-the-page-ui-from-frontend-public-assets-generated-do-not-fetch-images-from-the-backend",
+      "title": "Add the required generated static images to the project and render them in the page UI from frontend/public/assets/generated (do not fetch images from the backend).",
+      "reqIds": [
+        "REQ-5"
+      ],
+      "version": 1
+    },
+    {
+      "id": "feature-replace-the-current-rose-day-single-page-experience-with-a-user-friendly-interactive-informational-website-about-heart-disease-classification-from-echocardiogram-images-using-deep-learning-crediting-muhammad-raoof-and-muhammad-mahtab-on-the-page",
+      "title": "Replace the current Rose Day single-page experience with a user-friendly, interactive informational website about “Heart Disease Classification From Echocardiogram Images Using Deep Learning” (crediting MUHAMMAD RAOOF and MUHAMMAD MAHTAB on the page).",
+      "reqIds": [
+        "REQ-6"
+      ],
+      "version": 1
+    },
+    {
+      "id": "feature-implement-a-coherent-professional-medical-ai-visual-theme-colors-typography-layout-appropriate-for-a-healthcare-deep-learning-topic-and-apply-it-consistently-across-the-site-including-backgrounds-sections-buttons-and-interactive-states",
+      "title": "Implement a coherent, professional medical/AI visual theme (colors, typography, layout) appropriate for a healthcare deep-learning topic, and apply it consistently across the site (including backgrounds, sections, buttons, and interactive states).",
+      "reqIds": [
+        "REQ-7"
+      ],
+      "version": 1
+    },
+    {
+      "id": "feature-add-user-friendly-interactivity-suitable-for-an-informational-research-topic-site-including-1-a-sticky-top-navigation-with-smooth-scroll-to-sections-and-2-at-least-two-interactive-content-patterns-e-g-accordion-faqs-tabs-for-pipeline-model-results-expandable-cards-or-a-simple-step-by-step-pipeline-reveal",
+      "title": "Add user-friendly interactivity suitable for an informational research/topic site, including: (1) a sticky top navigation with smooth-scroll to sections, and (2) at least two interactive content patterns (e.g., accordion FAQs, tabs for “Pipeline / Model / Results”, expandable cards, or a simple step-by-step pipeline reveal).",
+      "reqIds": [
+        "REQ-8"
+      ],
+      "version": 1
+    },
+    {
+      "id": "feature-create-and-integrate-a-unique-site-logo-that-represents-the-owners-sonu-and-kuldeep-and-display-it-in-the-site-header-and-as-a-favicon-app-icon",
+      "title": "Create and integrate a unique site logo that represents the owners “Sonu” and “Kuldeep”, and display it in the site header and as a favicon/app icon.",
+      "reqIds": [
+        "REQ-9"
+      ],
+      "version": 1
+    },
+    {
+      "id": "feature-update-the-document-metadata-to-match-the-new-site-page-title-and-any-visible-branding-removing-the-old-rose-day-project-name-from-the-html-title",
+      "title": "Update the document metadata to match the new site (page title and any visible branding), removing the old Rose Day project name from the HTML title.",
+      "reqIds": [
+        "REQ-10"
+      ],
+      "version": 1
+    },
+    {
+      "id": "feature-add-and-use-new-generated-static-images-for-the-new-topic-hero-illustrations-backgrounds-from-frontend-public-assets-generated-and-ensure-the-ui-references-these-new-assets-do-not-fetch-images-from-the-backend",
+      "title": "Add and use new generated static images for the new topic (hero/illustrations/backgrounds) from frontend/public/assets/generated, and ensure the UI references these new assets (do not fetch images from the backend).",
+      "reqIds": [
+        "REQ-11"
+      ],
+      "version": 1
+    },
+    {
+      "id": "feature-maintain-responsiveness-and-accessibility-for-the-new-site-readable-contrast-sensible-spacing-on-small-screens-and-clear-focus-states-for-all-interactive-elements",
+      "title": "Maintain responsiveness and accessibility for the new site: readable contrast, sensible spacing on small screens, and clear focus states for all interactive elements.",
+      "reqIds": [
+        "REQ-12"
+      ],
+      "version": 1
+    }
+  ],
+  "new_feature_requests": [
+    {
+      "id": "AR-2",
+      "summary": "Create a user-friendly, interactive informational website on the topic “Heart Disease Classification From Echocardiogram Images Using Deep Learning”.",
+      "reqIds": [],
+      "status": "pending"
+    },
+    {
+      "id": "AR-3",
+      "summary": "Design and include a unique site logo representing/owned by Sonu and Kuldeep.",
+      "reqIds": [],
+      "status": "pending"
+    }
+  ],
+  "gameProjectType": "none",
+  "projectName": "Heart Disease Classification from Echocardiogram Images Using Deep Learning website",
+  "clarification_mode": "instant",
+  "clarification_rounds": 0
+}
